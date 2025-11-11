@@ -1,0 +1,11 @@
+{% extends "layouts/testlayout.njk" %}
+
+
+{% block content%}
+    <form action="/query" method="GET">
+        <input type="text" name="name" placeholder="Give yourself a name">
+        <button type="submit">send input to server</button>
+    </form>
+
+    <h1>welcomeeee {{name}}</h1>
+{% endblock %}
