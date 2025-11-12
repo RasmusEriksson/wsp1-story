@@ -1,0 +1,46 @@
+{
+    "pages" : [
+        {
+            "id" : 1,
+            "title" : "Humble Beginnings",
+            "text" : "this is the first page of the adventure, pick your next move....",
+            "choices" : [
+                {
+                    "description" : "Go forward...",
+                    "target_id" : 2
+                },
+                {
+                    "description" : "Go forward even further...",
+                    "target_id" : 3
+                } ]
+        },
+        {
+            "id" : 2,
+            "title" : "Humble Beginnings 2",
+            "text" : "this is the second page of the adventure, pick your next move....",
+            "choices" : [
+                {
+                    "description" : "Go backwards...",
+                    "target_id" : 1
+                },
+                {
+                    "description" : "Go forward...",
+                    "target_id" : 3
+                } ]
+        },
+        {
+            "id" : 3,
+            "title" : "Humble Beginnings 3",
+            "text" : "this is the third page of the adventure, pick your next move....",
+            "choices" : [
+                {
+                    "description" : "Go backwards...",
+                    "target_id" : 2
+                },
+                {
+                    "description" : "Go backwards even further...",
+                    "target_id" : 1
+                } ]
+        }
+    ]
+}
