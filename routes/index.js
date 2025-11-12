@@ -28,19 +28,19 @@ router.get("/story", (req, res) => {
 
 router.get("/story/:id", (req, res) => {
     const selectedPage = pages.find(page => page.id === +req.params.id)
+    console.log(selectedPage)
+    console.log(selectedPage.choices)
+    
     if (selectedPage) {
-        console.log(selectedPage)
-    }
-    else {
-        console.log("selected page not found")
+        res.render("story.njk", {
+            title : selectedPage.title,
+            text : selectedPage.text,
+            id : selectedPage.id,
+            choices: selectedPage.choices
+
+        })
     }
     
-
-    res.render("story.njk", {
-        title : "TEST BIG",
-        text : "Selected page should've been logged",
-        id : 0
-    })
 })
 
 

@@ -5,6 +5,8 @@
     <p>{{ text }}</p>
 
     <ul>
-        <li><a href="/story">hi</a></li>
+        {% for choice in choices %}
+            <li><a href="/story/{{choice.target_id}}">{{choice.description}}</a></li>
+        {% endfor %}
     </ul>
 {% endblock %}
