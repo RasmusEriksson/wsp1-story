@@ -7,34 +7,28 @@ const {pages} = JSON.parse(fs.readFileSync("./data/story.json"))
 
 
 router.get("/", (req, res) => {
-    res.render("index.njk", {
-        title: "THIS IS A BIGGG TITLE!!!!",
-        message: "this is a message being transmitted to you via THIS server that I'M running"
-    })
-})
-
-router.get("/query", (req, res) => {
-    const name = req.query.name || ""
-    res.render("query-test.njk", {name})
-})
-
-router.get("/story", (req, res) => {
     res.render("story.njk", {
-        title : "Start",
-        text : "Time to begin your great journey!!!",
-        id : 0
+        id : 0,
+        title: "Welcome to Tristan and Isolde (Vegetable Edition (choose your own adventure edition))",
+        text: ["Click on continue to start this awesome adventure..."],
+        image: "frame1.png",
+        choices: [{
+                    "description" : "Continue",
+                    "target_id" : 1
+                }]
     })
 })
+
+
 
 router.get("/story/:id", (req, res) => {
     const selectedPage = pages.find(page => page.id === +req.params.id)
-    console.log(selectedPage)
-    console.log(selectedPage.choices)
     
     if (selectedPage) {
         res.render("story.njk", {
             title : selectedPage.title,
             text : selectedPage.text,
+            image : selectedPage.image,
             id : selectedPage.id,
             choices: selectedPage.choices
 

@@ -1,0 +1,82 @@
+:root {
+    --space-3xs: clamp(0.3125rem, 0.2358rem + 0.3409vw, 0.5rem);
+    --space-2xs: clamp(0.5625rem, 0.4091rem + 0.6818vw, 0.9375rem);
+    --space-xs: clamp(0.875rem, 0.6449rem + 1.0227vw, 1.4375rem);
+    --space-s: clamp(1.125rem, 0.8182rem + 1.3636vw, 1.875rem);
+    --space-m: clamp(1.6875rem, 1.2273rem + 2.0455vw, 2.8125rem);
+    --space-l: clamp(2.25rem, 1.6364rem + 2.7273vw, 3.75rem);
+    --space-xl: clamp(3.375rem, 2.4545rem + 4.0909vw, 5.625rem);
+    --space-2xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
+    --space-3xl: clamp(6.75rem, 4.9091rem + 8.1818vw, 11.25rem);
+
+    --step--2: clamp(0.7813rem, 0.7081rem + 0.325vw, 0.96rem);
+    --step--1: clamp(0.9375rem, 0.8301rem + 0.4773vw, 1.2rem);
+    --step-0: clamp(1.125rem, 0.9716rem + 0.6818vw, 1.5rem);
+    --step-1: clamp(1.35rem, 1.1352rem + 0.9545vw, 1.875rem);
+    --step-2: clamp(1.62rem, 1.3239rem + 1.3159vw, 2.3438rem);
+    --step-3: clamp(1.944rem, 1.5408rem + 1.7922vw, 2.9297rem);
+    --step-4: clamp(2.3328rem, 1.789rem + 2.4169vw, 3.6621rem);
+    --step-5: clamp(2.7994rem, 2.0719rem + 3.2332vw, 4.5776rem);
+}
+
+.page {
+    background-color: rgb(255, 255, 255);
+    padding: var(--space-s);
+    padding-top: var(--space-l);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--space-3xs);
+
+    img {
+        height: var(--space-3xl);
+        object-fit: contain;
+    }
+}
+
+.choices {
+    padding-inline: var(--space-s);
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--step-0);
+    gap: var(--space-xs);
+    row-gap: var(--space-m);
+
+    justify-content: center;
+    padding-bottom: var(--space-l);
+    padding-top: var(--space-s);
+
+    li {
+        a {
+            background-color: white;
+            padding: var(--space-2xs);
+            border-radius: var(--space-3xs);
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: rgb(248, 255, 215);
+        }
+    }
+
+    
+}
+
+h1 {
+    font-size: var(--step-3);
+}
+h2 {
+    font-size: var(--step-2);
+}
+p {
+    font-size: var(--step--1);
+}
+
+body {
+    background-color: rgb(239, 226, 188);
+    max-width: 65ch;
+    margin-inline: auto;
+    margin-top: 0;
+    font-size: var(--step-0);
+    font-family: sans-serif;
+}

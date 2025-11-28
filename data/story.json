@@ -3,44 +3,265 @@
         {
             "id" : 1,
             "title" : "Humble Beginnings",
-            "text" : "this is the first page of the adventure, pick your next move....",
+            "image" : "frame1.png",
+            "text" : ["On the kitchentop there lays two vegetables, one red onion named Tristan and one Carrot named Isolde. The tension between the two is very deeply rooted and not a single vegetable word is shared between the two. Tristan has vowed to give over Isolde the Carrot to be the main ingredient in the grand soup Marke, signing her life in the process."],
             "choices" : [
                 {
-                    "description" : "Go forward...",
+                    "description" : "Continue",
                     "target_id" : 2
-                },
-                {
-                    "description" : "Go forward even further...",
-                    "target_id" : 3
-                } ]
+                }]
         },
         {
             "id" : 2,
-            "title" : "Humble Beginnings 2",
-            "text" : "this is the second page of the adventure, pick your next move....",
+            "title" : "Epic backstory",
+            "image" : "frame2.png",
+            "text" : ["Tristan had killed the whipped cream of which would’ve been Isoldes man and in return Isolde vowed to kill him by all means necessary. She managed to one day find him laying wounded and dying. Isolde had a vegetable peeler in her hand and was planning on killing him, but after taking a look into his deep many layers and getting fumes into her eyes she dropped it as she couldn’t manage to kill him.",  "But now her anger has been born anew as Tristan had given her up to the grand soup Marke of which she had no interest in becoming a part of. But for now they lie dormant on the kitchentop, waiting for Marke. But then Isolde gets an idea…"],
             "choices" : [
                 {
-                    "description" : "Go backwards...",
-                    "target_id" : 1
+                    "description" : "Call out to Tristan",
+                    "target_id" : 3
                 },
                 {
-                    "description" : "Go forward...",
-                    "target_id" : 3
+                    "description" : "Plot your revenge",
+                    "target_id" : 4
                 } ]
         },
         {
             "id" : 3,
-            "title" : "Humble Beginnings 3",
-            "text" : "this is the third page of the adventure, pick your next move....",
+            "title" : "A dastardly move...",
+            "image" : "frame1.png",
+            "text" : ["Isolde decides to try to get Tristans attention by calling out to him in hopes of swaying her predicament in her favor, or at least cast him into a worse direction than he is in currently.","Hey Tristan!!","what?","Isolde thinks for a bit before she makes her decision…"],
             "choices" : [
                 {
-                    "description" : "Go backwards...",
-                    "target_id" : 2
+                    "description" : "Be honest",
+                    "target_id" : 5
                 },
                 {
-                    "description" : "Go backwards even further...",
-                    "target_id" : 1
+                    "description" : "Back down",
+                    "target_id" : 6
                 } ]
+        },
+        {
+            "id" : 4,
+            "title" : "Mischevious plans",
+            "image" : "frame1.png",
+            "text" : ["Tristan seems to be preoccupied with his red onion thoughts about red onion things. Isolde's hatred for him has grown so strong that there’s nothing she’d want more than to take revenge. She figured that this would be the perfect time to catch him off guard and execute her plan once after all…"],
+            "choices" : [
+                {
+                    "description" : "Dill him",
+                    "target_id" : 7
+                },
+                {
+                    "description" : "Sugar him",
+                    "target_id" : 8
+                },
+                {
+                    "description" : "Try to get him chopped up first",
+                    "target_id" : 9
+                }  ]
+        },
+        {
+            "id" : 5,
+            "title" : "The truth",
+            "image" : "frame1.png",
+            "text" : ["Isolde clears her throat before beginning to speak.","-I do not like you at all Tristan. You killed my husband to be and now you’re trying to make me part of a soup I didn’t sign up to be part of. My hatred and wrath for you is immeasurable.","-You must understand Isolde, it’s only kitchen custom to give you over to the grand soup Marke. This is not personal.","Isolde thinks for a bit before making her next move…"]
+,
+            "choices" : [
+                {
+                    "description" : "Jump at Him.",
+                    "target_id" : 9
+                },
+                {
+                    "description" : "Make amends (lie)",
+                    "target_id" : 10
+                },
+                {
+                    "description" : "Surprise attack!",
+                    "target_id" : 11
+                }  ]
+        },
+        {
+            "id" : 6,
+            "title" : "A noble retreat",
+            "image" : "frame1.png",
+            "text" : ["Isolde couldn’t think of anything to say.","-Nevermind","-oh ok,","However this only fuels her frustrations even more…"],
+            "choices" : [
+                {
+                    "description" : "Continue",
+                    "target_id" : 4
+                }]
+        },
+        {
+            "id" : 7,
+            "title" : "A tasteless murder... (ENDING 1)",
+            "image" : "frame3.png",
+            "text" : ["In a fit of rage Isolde quickly grabs the spice-container containing dill with her green carrot leaves and throws it out over Tristan, spilling dill over both him and his surroundings in the process. Tristan's flavor was ruined by the addition of dill and would in a matter of seconds make him completely inedible for all foreseeable future by killing him. But with Isolde’s hasty maneuver she accidentally also spilled a whole heap of dill on herself as well, dooming them both to their grave."," Only a few seconds later they were both dead and completely inedible, as if they were lambs to the slaughter of dill…"]
+,
+            "choices" : [
+                {
+                    "description" : "Start over?",
+                    "target_id" : 1
+                }]
+        },
+        {
+            "id" : 8,
+            "title" : "Failed murder?",
+            "image" : "frame4.png",
+            "text" : ["Quickly without thinking she grabs a container with a bunch of sugar with her green carrot leaves and throws it out over the entire countertop, coating both Tristan and herself in the process. Both were in shock over what had just happened.They looked at each other and realized that they both looked incredibly sweet with their new crystal sugar coating…"],
+            "choices" : [
+                {
+                    "description" : "Continue",
+                    "target_id" : 12
+                }]
+        },
+        {
+            "id" : 9,
+            "title" : "Indirect Murder",
+            "image" : "frame5.png",
+            "text" : ["Isolde jumps out from her spot now laying behind Tristan out of sight making her less likely to be picked up and put into the grand soup Marke. Just moments later a large hand comes by with a large knife and cuts Tristan into two, taking one of his halves in the process.Tristan now lying with his open side to the sky has started to emit his fumes as he slowly starts to fade out of his life. The fumes make Isolde start to tear up against her will…"],
+            "choices" : [
+                {
+                    "description" : "Feel Joy",
+                    "target_id" : 13
+                },
+                {
+                    "description" : "Feel Pity",
+                    "target_id" : 14
+                } ]
+        },
+        {
+            "id" : 10,
+            "title" : "A modest proposal",
+            "image" : "frame1.png",
+            "text" : ["Isolde tries to persuade Tristan by another kitchen custom.","-If that’s how it is, we might as well make amends. Let’s season ourselves with the same seasoning to ensure trust and to put all of our differences behind us.","-So be it, the seasoning shall be yours to choose.","Isolde nods with her carrot head and starts trying to grab one of the pieces with the green carrots leaves she has…"],
+            "choices" : [
+                {
+                    "description" : "Season with dill",
+                    "target_id" : 7
+                },
+                {
+                    "description" : "Season with sugar",
+                    "target_id" : 8
+                } ]
+        },
+        {
+            "id" : 11,
+            "title" : "The vegetable peeler strikes again",
+            "image" : "frame6.png",
+            "text" : ["Isolde quickly and suddenly, without Tristan being able to react, takes out a secret vegetable peeler she had hidden in her green leaves and slices towards Tristan. The slice goes cleanly through his entire body, leaving half of his body laying open and exposed to the sky. He begins to emit fumes from his wounds as he slowly starts to die which seep into Isolde's eyes, making her cry against her will…"],
+            "choices" : [
+                {
+                    "description" : "Feel Joy",
+                    "target_id" : 13
+                },
+                {
+                    "description" : "Feel Pity",
+                    "target_id" : 14
+                } ]
+        },
+        {
+            "id" : 12,
+            "title" : "Sweet turn of events",
+            "image" : "frame7.png",
+            "text" : ["Observing each other in such a state they both feel as if they’ve known each other for a lifetime not being able to avert their non-existent vegetable eyes. The love they felt for each other was immense as their flavors had been improved tenfold by the introduction of sugar. They no longer wished each other any form of death, only prosperity.","No words were said, but Isolde knew just what to do…"],
+            "choices" : [
+                {
+                    "description" : "Die together",
+                    "target_id" : 15
+                },
+                {
+                    "description" : "Escape together",
+                    "target_id" : 16
+                },
+                {
+                    "description" : "Lay romantically on each other",
+                    "target_id" : 17
+                }  ]
+        },
+        {
+            "id" : 13,
+            "title" : "Bitter Revenge (ENDING 2)",
+            "image" : "frame8.png",
+            "text" : ["Isolde feels a deep sense of satisfaction and pride as she watches over Tristan's laying body which is now close to death. In her pride she forgets what’s still at stake and before she knows it she gets picked up by the big hand and taken away to the chopping board. On the board she gets cut up into many pieces and then added to the grand soup Marke. However while she dies, she does it feeling happy as she achieved what she wanted to, to get revenge on the person she hated most."],
+            "choices" : [
+                {
+                    "description" : "Start over?",
+                    "target_id" : 1
+                }]
+        },
+        {
+            "id" : 14,
+            "title" : "True pitty",
+            "image" : "frame9.png",
+            "text" : ["But as Isolde sheds more tears she realises that they aren’t forced, as they are true. As she observes the dying half of Tristan she can’t help but notice his true deep complexities and his many layers, layers that within she sees that he loves her. And by a mere glance she understands that they’re both now in love. ","But Tristan doesn’t have long, she will have to act fast to ensure either of their fate…"],
+            "choices" : [
+                {
+                    "description" : "Die together",
+                    "target_id" : 15
+                },
+                {
+                    "description" : "Escape together",
+                    "target_id" : 18
+                },
+                {
+                    "description" : "Lay romantically on each other",
+                    "target_id" : 19
+                }  ]
+        },
+        {
+            "id" : 15,
+            "title" : "Forever soup together (ENDING 3)",
+            "image" : "frame10.png",
+            "text" : ["With not many options they decide to lay on the counter, awaiting their fate of death. Both embracing the predicament they’ve found themselves in with what would be the equivalent of a grand smile in their feeble vegetable souls. Eventually they got put into the grand soup Marke, dying together."],
+            "choices" : [
+                {
+                    "description" : "Start over?",
+                    "target_id" : 1
+                }]
+        },
+        {
+            "id" : 16,
+            "title" : "The rat ending (ENDING 4)",
+            "image" : "frame11.png",
+            "text" : ["Both roll off the counter in an attempt to escape their fate of inevitable death and being eaten, but after all it was all in vain. Two rats on the floor found them, and ate them anyway, killing both in the process, however with far less grace than if they would’ve died by just laying still."],
+            "choices" : [
+                {
+                    "description" : "Start over?",
+                    "target_id" : 1
+                }]
+        },
+        {
+            "id" : 17,
+            "title" : "Sweet-Bitter end (ENDING 5)",
+            "image" : "frame12.png",
+            "text" : ["In an act of romantic passion you both lay atop of each other in a loving embrace. And by what almost seems like magic both of them combined together with the sugar that coated them into a new pastry. They became a red-onion-carrot-cake which was far more delicious than anything they would’ve hoped to be on their own."," Their new creation was too delicious however, which doomed them to a new equally terrible fate. They were soon picked up and eaten via a fork, killing both simultaneously in the process. Even if they still died, at least they both died in pride of the cake they made together."],
+            "choices" : [
+                {
+                    "description" : "Start over?",
+                    "target_id" : 1
+                }]
+        },
+        {
+            "id" : 18,
+            "title" : "The sad rat ending (ENDING 6)",
+            "image" : "frame13.png",
+            "text" : ["Isolde rolls off the counter in an act of escape begging Tristan to follow with. But before she can realize she has fallen off without Tristan being able to follow due to his injuries. Isolde got left on the floor to be eaten by the floor rats as Tristan had to lay dormant and embrace Isolde's fate before he must face his own being added to the grand soup Marke.","Tristan lays in sorrow before he gets picked up and taken to his sad end."],
+            "choices" : [
+                {
+                    "description" : "Start over?",
+                    "target_id" : 1
+                }]
+        },
+        {
+            "id" : 19,
+            "title" : "Bitter-Sweet end (ENDING 7)",
+            "image" : "frame14.png",
+            "text" : ["In an act of romantic passion you both lay atop of each other in a loving embrace. And by what almost seems like magic both of them combined together into a very bad coleslaw. The coleslaw was so uninteresting and bland that it could almost be deemed as inedible and no one even dared try it.","In the end it was merely thrown out and made into compost. And in the compost both of them finally found peace, being able to be one with mother nature and each other for the rest of their eternal days."],
+            "choices" : [
+                {
+                    "description" : "Start over?",
+                    "target_id" : 1
+                }]
         }
     ]
 }
